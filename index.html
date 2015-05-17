@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8' />
+	<title>mGEM</title> <!-- WEBSITE TITLE -->
+	<meta content="en" http-equiv="content-language"></meta>
+	<meta name="description" content="@McMasterU students using synthetic biology to make the world a better place."> <!-- WEBSITE DESCRIPTION -->
+	<meta name="keywords" content="engineering,chemical,bioengineer,medical,science,process,poop, synthetic, biology, multi,chromatic"> <!-- WEBSITE KEYWORDS -->
+	<link rel="icon" href="images/favicon1.png"> <!-- SPECIFY A FAVICON -->
+	<link rel='stylesheet' href='css/reset.css' type="text/css" charset="utf-8"/>
+	<link rel='stylesheet' href='css/style.css' type="text/css" charset="utf-8"/>
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+	<script type="text/javascript">
+	// NOTE: requires that your background images are located
+	// in '/images' directory and named bg<number>.jpg
+	// (Numbered from 1 -> total)
+	function setBackgroundImage() {
+		// NOTE: set numBgs to the number of bg images you have
+		var numBgs = 1;
+		var num = Math.ceil((Math.random() * numBgs) + 1);
+		var style = "url('images/bg" + num + ".jpg')";
+		elements = document.getElementsByClassName('fullscreen-img');
+	    for (var i = 0; i < elements.length; i++) {
+	        elements[i].style.backgroundImage=style;
+	    }
+	}
+	</script>
+</head>
+<body onload="setBackgroundImage()">
+	<div class="fullscreen-cont">
+		<div class = "fullscreen-img"></div>
+		<div id = "copy" class = "center">
+			<img id = "profile" src = "images/main_Gem.png"/> <!-- SPECIFY A MAIN PHOTO -->
+			<BR>
+			<h1><center>You Found Us!</center></h1>
+			<h2><center>We are mGEM.</center></h2>
+			<p>We are @McMasterU students using synthetic biology to
+			make the world a better place. The site is still
+			under development, in the meantime, you 
+			can find us here: </p>
+			<nav id="menu">
+				<center>
+				<ul>
+					<li>
+						<a title="Check out my code on GitHub" href="https://github.com/mgem" class="menu-item">
+			    			<img src="images/git1.png" onmouseover="this.src='images/git2.png'" onmouseout="this.src='images/git1.png'" />
+						</a>
+					</li>
+					<!--<li>
+						<a title="Add me on Facebook" href="#LINK-TO-YOUR-FACEBOOK" class="menu-item">
+			    			<img src="images/fb1.png" onmouseover="this.src='images/fb2.png'" onmouseout="this.src='images/fb1.png'" />
+						</a>
+					</li>-->
+					<li>
+						<a title="Follow me on Twitter" href="https://twitter.com/mcmaster_igem" class="menu-item">
+			    			<img src="images/twit1.png" onmouseover="this.src='images/twit2.png'" onmouseout="this.src='images/twit1.png'" />
+						</a>
+					</li>
+					<li>
+						
+						<a title="Send me an Email" href="mailto:contact@mcmastergem.com" class="menu-item">
+			    			<img src="images/mail1.png" onmouseover="this.src='images/mail2.png'" onmouseout="this.src='images/mail1.png'" />
+						</a>
+					</li>	
+					</center>		
+				</ul>
+			</nav>
+		</div>
+	</div>
+</body>
+</html>
